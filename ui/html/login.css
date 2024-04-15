@@ -1,0 +1,384 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.invalidlogin{
+  color: red;
+  display: block;
+  margin-top: 350px;
+  text-align: center;
+}
+
+.logo {
+  width: 120px; /* Set the width of the logo */
+  margin-right: auto; 
+  margin-left: 20px; 
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 431px) {
+  .logo {
+    margin-left: 10px; 
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #A2ADAF;
+  position: relative;
+  margin: 0 auto;
+  padding: 9px;
+  justify-content: space-evenly;
+}
+
+nav a {
+  display: block;
+  color: white;
+  font-weight: 550;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #3A3D32;
+}
+
+.nav-button {
+  padding-right: 20px;
+  
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #006C6C;
+}
+
+.user img {
+  margin-left: 10px;
+  border-radius: 50%;
+  /*make pic be a circle*/
+}
+
+/* --------------------------signup.html-------------------------*/
+
+.body {
+  margin-top: 50px;
+  /*center*/
+  display: flex;
+  /*make block center*/
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #3A3D32;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.content form .userinform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+form .userinform .inputbox {
+  margin-bottom: 15px;
+  width: 45%;
+  /* space between block */
+}
+
+h5 {
+  margin-bottom: 6px;
+}
+
+.userinform .inputbox input {
+  height: 10px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  /* border text*/
+}
+
+.content form .password {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.password .inputbox input {
+  height: 10px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  /* border text*/
+}
+
+form .password .inputbox {
+  margin-bottom: 15px;
+  width: 45%;
+}
+
+/*register bottom*/
+form .button {
+  height: 40px;
+  margin: 35px
+    /* button size*/
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  color: white;
+  border: none;
+  /* no border */
+  font-weight: 600;
+  font-size: 17px;
+  background-color: #D1964c;
+}
+
+form .button :hover {
+  color: #666666;
+  background-color: #A2ADAF;
+}
+
+.averages-text{
+  margin-left: 5px;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  margin-top: 22%;
+}
+
+
+/* --------------------------login.html-------------------------*/
+
+.margin {
+  padding: 20px;
+}
+
+.center {
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+}
+
+.margin h3{
+  color: white;
+  margin-top: 50%;
+}
+
+.center h1 {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #3A3D32;
+  margin-bottom: 20px;
+}
+
+h5 {
+  margin-bottom: 6px;
+}
+
+.center form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.txt2 {
+  margin-bottom: 20px;
+}
+
+/* sign up*/
+.signup {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #666666;
+}
+
+.signup a {
+  color: green;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+  /* sign up underline*/
+  color: #988E7D;
+}
+
+/* border text*/
+.inform .txt1 input {
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  /* border color and size*/
+  margin-bottom: 15px;
+  /* seperate between username and password*/
+}
+
+.inform .txt2 input {
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  /* border color and size*/
+}
+
+/*login bottom*/
+form .login {
+  height: 40px;
+  margin: 35px
+    /* button size*/
+}
+
+form .login input {
+  height: 100%;
+  width: 100%;
+  color: white;
+  border: none;
+  /* no border */
+  font-weight: 600;
+  font-size: 17px;
+  background-color:  #003b3b;
+  border-radius: 20px;
+}
+
+form .login :hover {
+  color: #666666;
+  background-color: #A2ADAF;
+}
+
+/*header*/
+.Home {
+  margin-top: -10px;
+  /* full header */
+  float: left;
+  /* make it be left */
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.Home a {
+  color: #3A3D32;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+
+
+/* --------------------------welcome.html-------------------------*/
+header{
+  background-color: none;
+}
+
+.background{
+	background: url(https://drive.google.com/uc?id=1LiKD7XV-GA6-tJbLeUIiT2Jxvj_Rtwqf) no-repeat;
+	background-size: cover;
+	height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Home i{
+  color: white;
+}
+
+.welcome h2{
+  color: rgb(255, 255, 255);
+  font-weight: 1000;
+  font-size: 55px;
+  text-align:center;
+}
+
+.welcome h3{
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.TextBox{
+  border: 1px solid rgb(255, 255, 255);
+  border-width: thin;
+  border-radius: 10px;
+  color: #fff;
+  width: 600px;
+  height: 100px;
+  text-align: center;
+  justify-content:center; 
+
+}
+
+.bblock{
+  display: flex;
+  flex-direction: column;
+  justify-content:center; /* make text center */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.block{
+  padding: 10px 30px;
+  border: white solid 1px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 17px;
+  background: black;
+  margin-bottom: 20px;
+  color: white;
+ 
+ 
+}
+
+.block a{
+  color: white;
+  text-decoration-line: none; /* no underline */
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.block a:hover{
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.block:hover{
+  background-color: #6c6c6c;
+  color:rgb(198, 198, 198);
+  border-color: #d7d7d7;
+  border-width: 2px;
+}
+
