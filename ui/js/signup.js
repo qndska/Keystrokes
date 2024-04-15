@@ -54,7 +54,7 @@ function addUser(){
 		.then(response => response.json())
 		.then(data => {
 			if (data.status == "success") {
-				alert("Add User success");
+				alert("User has been added successfully!");
                 console.log(data);
                 keystrokes = [];
 				window.location.reload();
@@ -103,10 +103,11 @@ document.addEventListener('DOMContentLoaded', function() {
         startTime = timestamp;
     });
 
-    document.getElementById('signup-button').addEventListener('click', function() {
+    document.getElementById('signup-button').addEventListener('submit', function() {
         if (document.getElementById("password").value.length < 12) {
             return; // Don't capture keystrokes if password length is less than 12
         }
+        else {
         const avg_CPM_user = calculateCPM(totalKeystrokes, totalUpDownTime);
         const avg_UD_user = totalUpDownTime / totalKeystrokes;
         const avg_DU_user = totalDownUpTime / totalKeystrokes;
@@ -118,6 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <p>Average UD: ${avg_UD_user} ms</p>
             <p>Average DU: ${avg_DU_user} ms</p>
         `;
+        }
     });
 });
 

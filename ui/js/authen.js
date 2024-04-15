@@ -47,6 +47,9 @@ function login() {
             }
             else if (data.message == "Invalid username or password")  {
                 alert("Invalid username or password. Please try again.");
+                let invalid_login = document.getElementById("invalid_login");
+                invalid_login.innerHTML = 
+                ` Invalid username or password `;
             }
             else if (data.message == "Invalid keystroke pattern")  {
                 alert("Invalid keystroke pattern. Please try again.");

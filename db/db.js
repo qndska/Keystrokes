@@ -100,7 +100,7 @@ router.post('/db_login', async function (req, res) {
                         let similarity_pass = calculateSimilarityPass({ avg_CPM_pass, avg_UD_pass, avg_DU_pass }, { avg_CPM_pass: stored_avg_CPM_pass, avg_UD_pass: stored_avg_UD_pass, avg_DU_pass: stored_avg_DU_pass });
 
 
-                        let similarityThreshold = 0.1;
+                        let similarityThreshold = 0.4;
                         console.log('similarity_user', similarity_user, '\n');
                         console.log('similarity_pass', similarity_pass);
 
